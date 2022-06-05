@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  
+        
+    <title>Document</title>
+</head>
+
+<body>
+    
+<section>
+        <div id="texto">
+            <img src="estevam-exaltado-3.png" alt="">
+             <h1>Meu filho... eu vou revelar todos os segredos para você ser exaltado nas suas viagens</h1>
+        </div>
+        <div>
+            <img src="viajante.png" alt="">
+            <h1>Cansado de viajar espremido na econolata?</h1><br>
+            <h3>Vou te ensinar a viajar de Execuryca pagando preço de Econolata usando milhas aéreas. Estados Unidos por R$ 2 mil, Ásia por R$ 5 mil... De executiva!</h3>
+
+           <div id="botao">
+               
+                   <input type="nome" id="nome" placeholder="Digite o seu nome">
+                   
+                   <input type="email" id="email" placeholder="Digite o seu email">
+                   
+                   <input type="tel" id="tel" placeholder="Digite o seu telefone" maxlength="11">
+                                              
+                  <button type="submit" onclick="entrar()">Quero ser exaltado</button>
+                          
+        </div>
+                       
+</section>   
+
+
+<footer>
+    <p>Copyright 2020™.  Todos os direitos reservados</p>
+</footer>
+                    
+                            
+
+ 
+    
+
+    <script>
+        function entrar(){
+            if(nome.value == ''||nome.value.length <7){alert('Digite o seu nome')
+            nome.style.background='red';
+            nome.focus(); 
+            return false;          
+           }
+           else if(email.value == ''||email.value.indexOf ("@")== -1 ||email.value.indexOf (".") == -1)
+           {alert('Digite seu email')
+           email.style.background='red';
+           tel.style.background='white'
+           email.focus();
+           return false; 
+           }
+           else if(tel.value==""||tel.value.length<=9){
+               alert('Digite seu telefone')
+               tel.style.background='red';
+               tel.focus()
+               return false;
+            }
+
+               else{alert('Seja muito bem vindo')
+               tel.style.background='white'
+            }
+            }  
+           
+        
+    </script>
+ 
+
+</body>
+</html>
